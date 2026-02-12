@@ -390,13 +390,7 @@ img {
 }
 
 .about-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: linear-gradient(to top, var(--primary-dark), transparent);
+    display: none;
 }
 
 .about-grid {
