@@ -347,6 +347,14 @@ img {
     background: linear-gradient(90deg, var(--secondary) 0%, var(--white) 100%);
 }
 
+.section-purple .section-header h2 {
+    color: var(--secondary);
+}
+
+.section-purple .section-header p {
+    color: var(--secondary-light);
+}
+
 .section-header {
     text-align: center;
     max-width: 650px;
@@ -705,17 +713,53 @@ img {
     align-items: center;
     gap: 10px;
     padding: 14px 28px;
-    background: var(--primary);
     color: var(--white);
     border-radius: 50px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     transition: var(--transition);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(255,255,255,0.3);
 }
 
 .country-tag:hover {
-    background: var(--primary-light);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(255,255,255,0.6);
+}
+
+/* South Africa */
+.country-tag.za {
+    background: linear-gradient(135deg, #007749 0%, #007749 33%, #FFB81C 33%, #FFB81C 50%, #000000 50%, #000000 67%, #DE3831 67%, #DE3831 100%);
+}
+
+/* Mozambique */
+.country-tag.mz {
+    background: linear-gradient(180deg, #009639 0%, #009639 33%, #000000 33%, #000000 40%, #FCE300 40%, #FCE300 60%, #000000 60%, #000000 67%, #D21034 67%, #D21034 100%);
+}
+
+/* Botswana */
+.country-tag.bw {
+    background: linear-gradient(180deg, #75AADB 0%, #75AADB 35%, #FFFFFF 35%, #FFFFFF 40%, #000000 40%, #000000 60%, #FFFFFF 60%, #FFFFFF 65%, #75AADB 65%, #75AADB 100%);
+    color: #000;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+/* Namibia */
+.country-tag.na {
+    background: linear-gradient(135deg, #003580 0%, #003580 40%, #FFFFFF 40%, #FFFFFF 45%, #D21034 45%, #D21034 55%, #FFFFFF 55%, #FFFFFF 60%, #009543 60%, #009543 100%);
+}
+
+/* Tanzania */
+.country-tag.tz {
+    background: linear-gradient(135deg, #1EB53A 0%, #1EB53A 40%, #FCD116 40%, #FCD116 45%, #000000 45%, #000000 55%, #FCD116 55%, #FCD116 60%, #00A3DD 60%, #00A3DD 100%);
+}
+
+/* Zimbabwe */
+.country-tag.zw {
+    background: linear-gradient(180deg, #319208 0%, #319208 14%, #FFD200 14%, #FFD200 28%, #DE2010 28%, #DE2010 42%, #000000 42%, #000000 58%, #DE2010 58%, #DE2010 72%, #FFD200 72%, #FFD200 86%, #319208 86%, #319208 100%);
 }
 
 /* ========================================
