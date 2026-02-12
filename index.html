@@ -347,7 +347,10 @@
                 </div>
                 <div class="contact-form-wrapper">
                     <h3>Send us a message</h3>
-                    <form class="contact-form" id="contactForm">
+                    <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New enquiry from Cathrich website">
+                        <input type="hidden" name="from_name" value="Cathrich Website">
                         <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -368,6 +371,7 @@
                             <label for="message">Message *</label>
                             <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
                         </div>
+                        <input type="hidden" name="redirect" value="https://robyn91.github.io/cathrich-website/?submitted=true">
                         <button type="submit" class="btn btn-secondary btn-lg">Send Message</button>
                     </form>
                 </div>

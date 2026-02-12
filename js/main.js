@@ -51,49 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Contact Form Handling
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData.entries());
-            
-            // Basic validation
-            if (!data.name || !data.email || !data.message) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(data.email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-            
-            // Construct mailto link
-            const subject = encodeURIComponent(`Website Enquiry from ${data.name}`);
-            const body = encodeURIComponent(
-                `Name: ${data.name}\n` +
-                `Email: ${data.email}\n` +
-                `Phone: ${data.phone || 'Not provided'}\n` +
-                `Company: ${data.company || 'Not provided'}\n\n` +
-                `Message:\n${data.message}`
-            );
-            
-            // Open email client
-            window.location.href = `mailto:sales@cathrich.co.za?subject=${subject}&body=${body}`;
-            
-            // Show success message
-            alert('Thank you! Your email client will open to send your message.');
-            
-            // Reset form
-            this.reset();
-        });
+    // Contact Form - Check for submission success
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === 'true') {
+        alert('Thank you! Your message has been sent successfully. We will get back to you soon.');
+        // Clean URL
+        window.history.replaceState({}, document.title, window.location.pathname);
     }
     
     // Animate elements on scroll
