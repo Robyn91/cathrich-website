@@ -713,13 +713,13 @@ img {
     align-items: center;
     gap: 10px;
     padding: 14px 28px;
-    color: #ffffff !important;
+    color: #3c0a3d !important;
     border-radius: 50px;
     font-weight: 800;
     font-size: 14px;
     letter-spacing: 0.5px;
     transition: var(--transition);
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 3px rgba(0,0,0,0.9);
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     background-size: cover;
     background-position: center;
     border: 2px solid rgba(255,255,255,0.5);
@@ -745,7 +745,6 @@ img {
 
 /* Botswana */
 .country-tag.bw {
-    color: #ffffff !important;
     background: linear-gradient(180deg, rgba(117,170,219,0.35) 0%, rgba(117,170,219,0.35) 35%, rgba(200,200,200,0.25) 35%, rgba(200,200,200,0.25) 40%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.3) 60%, rgba(200,200,200,0.25) 60%, rgba(200,200,200,0.25) 65%, rgba(117,170,219,0.35) 65%, rgba(117,170,219,0.35) 100%);
 }
 
