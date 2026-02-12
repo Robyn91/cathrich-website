@@ -379,7 +379,6 @@ img {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    position: relative;
 }
 
 .about-image img {
@@ -387,10 +386,6 @@ img {
     height: 400px;
     object-fit: cover;
     display: block;
-}
-
-.about-image::after {
-    display: none;
 }
 
 .about-grid {
