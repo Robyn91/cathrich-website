@@ -1,0 +1,9 @@
+{
+  "name": "cathrich-website",
+  "version": "1.0.0",
+  "description": "Cathrich No.13cc - Procurement, Import, Export",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'"
+  }
+}
